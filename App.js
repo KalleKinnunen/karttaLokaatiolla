@@ -66,8 +66,7 @@ export default function App() {
           returnKeyType="done"></TextInput>
         <View style={{ flexDirection: 'row', margin: 10 }}>
         <TouchableOpacity style={styles.button} onPress={() => fetchLocation()}><Text>Nykyinen lokaatio</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => fetchAddressCoord()}><Text>Näytä osoite</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => setAddress('')}><Text>Tyhjennä</Text></TouchableOpacity>
+         
         </View>
       </KeyboardAvoidingView>
 
