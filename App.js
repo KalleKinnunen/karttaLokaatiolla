@@ -42,6 +42,7 @@ export default function App() {
   return (
     <View style={styles.container} >
       <MapView
+      showsUserLocation={true}
         style={{ flex: 1, width: '100%', height: 400 }}
         region={{
           latitude: parseFloat(coords.latitude),
@@ -51,6 +52,7 @@ export default function App() {
         }}
       >
         <Marker
+        followsUserLocation={true}
           coordinate={{
             latitude: parseFloat(coords.latitude),
             longitude: parseFloat(coords.longitude),
