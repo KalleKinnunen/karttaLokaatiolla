@@ -39,15 +39,15 @@ export default function App() {
     }
   }
   const initial = {
-    latitude: 60.200692,
-    longitude: 24.934302,
+    latitude: location.coords.latitude,
+    longitude: location.coords.longitude,
     latitudeDelta: 0.0322,
     longitudeDelta: 0.0221
   };
 
   const coordinates = {
-    latitude: 60.201373,
-    longitude: 24.934041
+    latitude: location.coords.latitude,
+    longitude: location.coords.longitude
   };
 
   return (
