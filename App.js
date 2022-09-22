@@ -38,25 +38,28 @@ export default function App() {
 
     }
   }
+  const initial = {
+    latitude: 60.200692,
+    longitude: 24.934302,
+    latitudeDelta: 0.0322,
+    longitudeDelta: 0.0221
+  };
+
+  const coordinates = {
+    latitude: 60.201373,
+    longitude: 24.934041
+  };
 
   return (
     <View style={styles.container} >
       <MapView
       showsUserLocation={true}
         style={{ flex: 1, width: '100%', height: 400 }}
-        region={{
-          latitude: parseFloat(coords.latitude),
-          longitude: parseFloat(coords.longitude),
-          latitudeDelta: 0.00322,
-          longitudeDelta: 0.0211
-        }}
+        region={initial}
       >
         <Marker
         followsUserLocation={true}
-          coordinate={{
-            latitude: parseFloat(coords.latitude),
-            longitude: parseFloat(coords.longitude),
-          }}
+          coordinate={coordinates}
         ></Marker>
       </MapView>
 
